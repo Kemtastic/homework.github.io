@@ -1,0 +1,120 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif; /* Yazı tipi değiştirildi */
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.jpg'); /* Arka plan resmi */
+    background-size: cover; /* Resmi tüm alana yayar */
+    background-position: center; /* Ortalar */
+    opacity: 0.9; /* Şeffaflık değeri */
+    color: #333; /* Yazı rengi */
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.9); /* Yarı saydam arka plan */
+    padding: 20px 0;
+    position: fixed; /* Navigasyon sabit kılındı */
+    top: 0; /* Üstte konumlandırıldı */
+    width: 100%; /* Tüm genişlik kaplandı */
+    z-index: 1000; /* Diğer öğelerin üstünde görünmesini sağla */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; /* Font boyutu */
+    transition: transform 0.3s ease; /* Hover animasyonu için geçiş */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    transform: scale(1.1); /* Hover'da yazıyı büyütme */
+}
+
+section {
+    padding: 20px 20px 20px;  /*Üstten biraz boşluk eklendi */
+    background-color: rgba(255, 255, 255, 0.8); /* Yarı saydam bölüm arka planı */
+    margin: 20px auto; /* Ortaya alma */
+    border-radius: 10px; /* Köşeleri yuvarlar */
+    max-width: 800px; /* Maksimum genişlik */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Gölgelendirme efekti */
+    text-align: center; /* Metin ortalama */
+}
+
+h1, h2 {
+    color: #333; /* Başlık rengi */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Stroke efekti için gölge */
+}
+
+h1 {
+    font-size: 3em; /* Ana başlık boyutu */
+}
+
+p {
+    font-size: 1.2em; /* Paragraf yazı boyutu */
+    line-height: 1.6; /* Satır aralığı */
+    margin: 10px 0; /* Alt üst boşluk */
+}
+
+img {
+    max-width: 25%; /* Resmi yazıya göre ayarlama */
+    height: auto; /* Orantıyı koruma */
+    display: block; /* Ortaya alma */
+    margin: 20px auto; /* Üst ve alt boşluk ekleme */
+}
+
+iframe {
+    max-width: 100%; /* Video boyutunu ayarlama */
+    height: auto; /* Orantıyı koruma */
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.project-card video {
+    width: 100%; /* Video genişliğini kartın genişliğine uydur */
+    border-radius: 5px; /* Video köşelerini yuvarla */
+}
+
+h2 {
+    margin: 10px 0; /* Üst ve alt kenar boşluğunu azalt */
+    padding: 0; /* Başlık etrafındaki dikey boşluğu sıfırla */
+    font-size: 2em; /* Başlık boyutunu ayarlayabilirsin */
+    text-align: center; /* Başlıkları ortaya al */
+}
+
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Kartları ortala */
+    gap: 20px; /* Kartlar arasındaki boşluğu ayarla */
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Kart arka plan rengi */
+    border-radius: 10px; /* Kart köşe yuvarlama */
+    padding: 10px; /* Kart iç boşluğu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+    text-align: center; /* Kart içindeki metni ortala */
+    max-width: 300px; /* Kartların maksimum genişliği */
+}

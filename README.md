@@ -8,3 +8,8 @@ Bu proje, kişisel blog oluşturmak amacıyla geliştirilmiştir. Blogda kendini
 Projeyi yerel makinenize kopyalamak için:
 ```bash
 git clone https://github.com/Kemtastic/homework.git
+
+```
+## Web sitesi
+```bash
+https://kemtastic.github.io/homework.github.io/
